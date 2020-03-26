@@ -2,9 +2,8 @@ def turn_count(board)
   counter = 0
   board.each {|position|
     if position == "X" || position == "O"
-      turn = 1
-    else
-      turn = 0
+      counter += 1
     end
-    turn += 1
+  }
+  counter
 end
